@@ -1,0 +1,16 @@
+Due to the nature and scale of our project of integrating a wide array of wireless data protocols into a cloud based IoT
+application my team was selected for a special AWS funding where we were given a free AWS account and direct support from
+their developers. Utilizing this great oppurtunity, I experimented extensively with services such as IoT Core, Greengrass, Kinesis Firehose and
+their serverless services such as Lambdas and S3 buckets. During our development we had direct influence on the development direction
+of IoT services that AWS offers since those went public around the same time as we started the project.
+
+As the IoT Engineer in the team I utilized AWS to build a data pipeline, where the IoT Core endpoint would act as the entry
+to all the device data, regardless of what protocol or API they used, and then get passed on to a Lamba function after a
+certain amount of time using Kinesis Firehose, where the data would get decoded and processed. From here I worked with our 
+team lead and AWS engineers to utilize ECS and ElasticSearch. We used ECS to host a docker container of a LoRaWAN server,
+one of the wireless protocols we supported, which bridged the gap between a LoRaWAN Gateway (i.e. like a WiFI router but for
+LoRaWAN) and added some necessary tags and values used to process device data. ElasticSearch was used to serve data to the
+front-end, it fetched data from an S3 bucket datalake and stored the information for a certain amount of time so the end
+user would be able to retrieve the monitoring information almost instantly. It was my responsibility to oversee this entire
+stream of data all the way from the device to the front-end, so I was heavily involved with debugging every stage of the whole
+AWS infrastracture, including logging services such as Cloudwatch and Logstash.

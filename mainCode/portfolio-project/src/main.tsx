@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 /*import "bootstrap/dist/css/bootstrap.css";*/
-import "./scss/custom.css";
+import "./scss/custom.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DevOpsPage from "./pages/DevOpsPage";
 import BackEndpage from "./pages/BackEndpage";
