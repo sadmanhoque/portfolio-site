@@ -1,0 +1,10 @@
+
+
+[
+    {
+        "id": 1,
+        "title": "IoT Developer at Perennia",
+        "contentBackground": "With an academic background in both electronic engineering and software development I have the right combination of experience to be good at IoT Development. In this particular project we were starting from scratch, where the company didn't even have an technology department until me and my team joined. The goal was to design an IoT platform for provincial farmers to monitor the resources in their farm.",
+        "contentPointOne": "Given a blank slate, and a very small team of 5 of us, I took the initiative to utilize off the shelf components that are individually certified to be used where we would be deploying them, and then we worked on integrating all of them into our cloud based IoT platform. To achieve this I would document everything required for each thing we wanted to monitor, and then figure out what are the commonly used data protocols for these devices. By the time our stack was relatively established, I had built support for LoRaWAN, cellular, bluetooth and API. Regardless of which of these protocols a device would use, they would integrate seamlessly with out backend server stack which me and the leader developer designed."
+    }
+]

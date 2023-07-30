@@ -4,7 +4,7 @@ interface Props {
   categories: string;
 }
 
-function Cards({ categories, text }: Props) {
+function Cards({ categories }: Props) {
   return (
     <Link to={"/" + categories}>
       <div className="card width: 18rem;">

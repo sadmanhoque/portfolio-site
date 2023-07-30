@@ -1,24 +1,26 @@
 import { useEffect, useState } from "react";
 import Paragraphs from "../components/Paragraphs";
 import Navbar from "../components/Navbar";
+import jsonData from "/src/text-files/IoT-Perennia-background.json";
 
 function IoTPage() {
   const [paragraphText, setParagraphText] = useState("");
 
   useEffect(() => {
-    fetch("src/text-files/paragraph.txt")
+    fetch("src/text-files/IoT-Perennia-background.json")
       .then((response) => response.text())
       .then((data) => setParagraphText(data));
   }, []);
 
   return (
-    <div>
-      <Navbar />
-      <h1>This is a header</h1>
-      <h2>Header level 2</h2>
-      <Paragraphs text={paragraphText} />
-      <h2>Second header level 2</h2>
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <h2 className="text-center">IoT Developer at Perennia</h2>
+        <Paragraphs text={jsonData[0].contentBackground} />
+        <Paragraphs text={jsonData[0].contentPointOne} />
+      </div>
+    </>
   );
 }
 
