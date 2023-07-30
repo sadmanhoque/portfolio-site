@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 interface Props {
   categories: string;
-  text: string;
 }
 
 function Cards({ categories, text }: Props) {
@@ -12,7 +11,6 @@ function Cards({ categories, text }: Props) {
         <img src="src/assets/react.svg" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{categories}</h5>
-          <p className="card-text">{text}</p>
         </div>
       </div>
     </Link>

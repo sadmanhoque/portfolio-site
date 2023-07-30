@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Paragraphs from "../components/Paragraphs";
+import Navbar from "../components/Navbar";
 
 function IoTPage() {
   const [paragraphText, setParagraphText] = useState("");
@@ -12,6 +13,7 @@ function IoTPage() {
 
   return (
     <div>
+      <Navbar />
       <h1>This is a header</h1>
       <h2>Header level 2</h2>
       <Paragraphs text={paragraphText} />

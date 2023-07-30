@@ -9,7 +9,6 @@ function App() {
     height: "50vh",
   };
   const categories = ["DevOps", "BackEnd", "IoT"];
-  const text = "something";
   return (
     <>
       <div style={header}>
@@ -18,13 +17,13 @@ function App() {
       <div className="container text-center">
         <div className="row">
           <div className="col">
-            <Cards categories={categories[0]} text={text} />
+            <Cards categories={categories[0]} />
           </div>
           <div className="col">
-            <Cards categories={categories[1]} text={text} />
+            <Cards categories={categories[1]} />
           </div>
           <div className="col">
-            <Cards categories={categories[2]} text={text} />
+            <Cards categories={categories[2]} />
           </div>
         </div>
       </div>
