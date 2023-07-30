@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "../scss/custom.scss";
 
 function Navbar() {
   return (
-    <div>
+    <div style={{ backgroundColor: "var(--background-color)" }}>
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
           <Link className="navbar-brand" to={"/"}>

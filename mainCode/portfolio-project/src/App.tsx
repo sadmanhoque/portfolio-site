@@ -1,4 +1,5 @@
 import "./App.css";
+import "./scss/custom.scss";
 import Cards from "./components/Cards";
 
 function App() {

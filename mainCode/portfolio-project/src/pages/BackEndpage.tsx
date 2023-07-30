@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
 import Paragraphs from "../components/Paragraphs";
 import Navbar from "../components/Navbar";
+import "../scss/secondary.scss";
 import jsonData from "/src/text-files/BackEnd.json";
 
 function BackEndpage() {
   return (
     <>
-      <div>
+      <div style={{ backgroundColor: "var(--secondary-background-color)" }}>
         <Navbar />
         <div>
           <h2 className="text-center">{jsonData[0].title}</h2>
