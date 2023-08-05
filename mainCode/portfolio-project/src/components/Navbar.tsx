@@ -1,15 +1,24 @@
-import { Link } from "react-router-dom";
-import "../scss/custom.scss";
+//import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import "../App.css";
 
-function Navbar() {
+interface Props {
+  navBarItems: string[];
+}
+
+function Navbar({ navBarItems }: Props) {
   return (
-    <div style={{ backgroundColor: "var(--background-color)" }}>
-      <nav className="navbar bg-body-tertiary">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to={"/"}>
-            Home
-          </Link>
-        </div>
+    <div>
+      <nav>
+        <ul>
+          {navBarItems.map((item) => (
+            <li>
+              <Link to={item} smooth={true} offset={-500} duration={500}>
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   );

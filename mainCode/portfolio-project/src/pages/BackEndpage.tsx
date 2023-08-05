@@ -1,6 +1,5 @@
 import Paragraphs from "../components/Paragraphs";
 import Navbar from "../components/Navbar";
-import "../scss/secondary.scss";
 import jsonData from "/src/text-files/BackEnd.json";
 
 function BackEndpage() {
