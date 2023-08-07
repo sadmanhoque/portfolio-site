@@ -12,7 +12,7 @@ function Navbar({ navBarItems }: Props) {
       <nav>
         <ul>
           {navBarItems.map((item) => (
-            <li>
+            <li className="fancy-link">
               <Link to={item} smooth={true} offset={-500} duration={500}>
                 {item}
               </Link>

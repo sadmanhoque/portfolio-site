@@ -9,8 +9,13 @@ function App() {
     justifyContent: "center",
     height: "50vh",
   };
-  const categories = ["DevOps", "BackEnd", "IoT"];
-  const navBarItems = ["Home", "Work", "Projects", "Contacts"];
+  const workItems = ["DevOps", "BackEnd", "IoT"];
+  const navBarItems = ["Work", "Projects", "Contacts"];
+  const categoryItems = [
+    { section: "Work", contents: ["DevOps", "BackEnd", "IoT"] },
+    { section: "Projects", contents: ["one", "two", "three"] },
+    { section: "Contacts", contents: ["aa", "bb", "cc"] },
+  ];
 
   return (
     <>
@@ -20,11 +25,9 @@ function App() {
       </div>
 
       <main>
-        {navBarItems.map((item) => (
+        {categoryItems.map((category) => (
           <div className="content">
-            <h1 className="content-header" id={item}>
-              {item}
-            </h1>
+            <Cards categories={category.contents} />
           </div>
         ))}
       </main>
