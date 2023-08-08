@@ -50,6 +50,12 @@ a {
     color: white
 }
 
+.main-header{
+    display: "flex";
+    justify-content: center;
+    height: "200px";
+}
+
 .fancy-link {
     text-decoration: none;
     color: rgb(0, 123, 255);

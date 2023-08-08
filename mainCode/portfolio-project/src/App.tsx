@@ -1,6 +1,7 @@
 import "./App.css";
 import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
+import wordRecords from "./text-files/workRecords.json";
 
 function App() {
   const header = {
@@ -25,11 +26,21 @@ function App() {
       </div>
 
       <main>
-        {categoryItems.map((category) => (
-          <div className="content">
-            <Cards categories={category.contents} />
-          </div>
-        ))}
+        <div className="content">
+          <Cards categories={wordRecords.DevOps} header={"DevOps"} />
+          <Cards categories={wordRecords.IoT} header={"IoT"} />
+          <Cards categories={wordRecords.BackEnd} header={"BackEnd"} />
+        </div>
+        <div className="content">
+          <Cards categories={navBarItems} header={"temp"} />
+          <Cards categories={navBarItems} header={"temp"} />
+          <Cards categories={navBarItems} header={"temp"} />
+        </div>
+        <div className="content">
+          <Cards categories={navBarItems} header={"temp"} />
+          <Cards categories={navBarItems} header={"temp"} />
+          <Cards categories={navBarItems} header={"temp"} />
+        </div>
       </main>
     </>
   );

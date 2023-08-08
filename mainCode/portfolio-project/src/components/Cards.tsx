@@ -10,11 +10,11 @@ function Cards({ categories, header }: Props) {
   let boxContent = [];
 
   return (
-    <div>
+    <div className="card-header">
       <h1>{header}</h1>
       {categories.map((category) => (
-        <li className="card-header">
-          <h1>{category}</h1>
+        <li>
+          <h4>{category}</h4>
         </li>
       ))}
     </div>
