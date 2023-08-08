@@ -2,6 +2,7 @@ import "./App.css";
 import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import wordRecords from "./text-files/workRecords.json";
+import projectRecords from "./text-files/projectRecords.json";
 
 function App() {
   const header = {
@@ -32,9 +33,19 @@ function App() {
           <Cards categories={wordRecords.BackEnd} header={"BackEnd"} />
         </div>
         <div className="content">
-          <Cards categories={navBarItems} header={"temp"} />
-          <Cards categories={navBarItems} header={"temp"} />
-          <Cards categories={navBarItems} header={"temp"} />
+          <Cards
+            categories={projectRecords.GoogleMapsRandomizer}
+            header={"Google Maps Randomizer"}
+          />
+          <Cards
+            categories={projectRecords.DataAnalytics}
+            header={"Data Analytics"}
+          />
+          <Cards
+            categories={projectRecords.Electronics}
+            header={"Electronics"}
+          />
+          <Cards categories={projectRecords.Research} header={"Research"} />
         </div>
         <div className="content">
           <Cards categories={navBarItems} header={"temp"} />
