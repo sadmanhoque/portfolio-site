@@ -7,8 +7,6 @@ interface Props {
 }
 
 function Cards({ categories, header }: Props) {
-  let boxContent = [];
-
   return (
     <div className="card-header">
       <h1>{header}</h1>
