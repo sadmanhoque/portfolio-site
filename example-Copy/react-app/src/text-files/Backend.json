@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "BackEnd Developer at Perennia",
+        "contentBackground": "Responsible for writing code to correctly decode data from all types of sensors, scripts to make API calls and calculating usage costs based on rates scrapped from official websites",
+        "contentPointOne": ""
+    },
+    {
+        "id": 2,
+        "title": "BackEnd Developer at GreyLit",
+        "contentBackground": "Part of a team designated to the development of Natural Language Processing features using Amazon Web Services' Lambda trigger and S3 storage tools.",
+        "contentPointOne": ""
+    }
+]
