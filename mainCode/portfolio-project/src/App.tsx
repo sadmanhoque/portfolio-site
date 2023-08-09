@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <Navbar navBarItems={navBarItems} />
-      <div style={header}>
+      <div style={header} className="bg-red-300">
         <h1>Hello, React App!</h1>
       </div>
 
@@ -41,35 +41,44 @@ function App() {
           <Cards categories={wordRecords.IoT} header={"IoT"} />
           <Cards categories={wordRecords.BackEnd} header={"BackEnd"} />
         </div>
-        <div className="content ">
-          <div className="container d-flex gx-6">
-            <BootstrapCards
-              header={"Google Maps Randomizer"}
-              stuff={projectRecords.GoogleMapsRandomizer[0]}
-              hyperLink={"google.com"}
-              imageLink={imageLink[0]}
-            />
-
-            <BootstrapCards
-              stuff={projectRecords.DataAnalytics[0]}
-              header={"Data Analytics"}
-              hyperLink={"google.com"}
-              imageLink={imageLink[0]}
-            />
-
-            <BootstrapCards
-              stuff={projectRecords.Electronics[0]}
-              header={"Electronics"}
-              hyperLink={"google.com"}
-              imageLink={imageLink[0]}
-            />
-
-            <BootstrapCards
-              stuff={projectRecords.Research[0]}
-              header={"Research"}
-              hyperLink={"google.com"}
-              imageLink={imageLink[0]}
-            />
+        <div className="content">
+          <div className="container">
+            <div className="row">
+              <div className="col-3">
+                <BootstrapCards
+                  header={"Google Maps Randomizer"}
+                  stuff={projectRecords.GoogleMapsRandomizer[0]}
+                  hyperLink={"google.com"}
+                  imageLink={imageLink[0]}
+                />
+              </div>
+              <div className="col-3">
+                <BootstrapCards
+                  stuff={projectRecords.DataAnalytics[0]}
+                  header={"Data Analytics"}
+                  hyperLink={"google.com"}
+                  imageLink={imageLink[0]}
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-3">
+                <BootstrapCards
+                  stuff={projectRecords.Electronics[0]}
+                  header={"Electronics"}
+                  hyperLink={"google.com"}
+                  imageLink={imageLink[0]}
+                />
+              </div>
+              <div className="col-3">
+                <BootstrapCards
+                  stuff={projectRecords.Research[0]}
+                  header={"Research"}
+                  hyperLink={"google.com"}
+                  imageLink={imageLink[0]}
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className="content">
