@@ -9,7 +9,7 @@ interface Props {
 
 function BootstrapCards({ header, stuff, hyperLink, imageLink }: Props) {
   return (
-    <div className="bg-green-400">
+    <div className="bg-green-900">
       <img src={imageLink} className="card-img-top" alt="test" />
       <div className="card-body">
         <h5 className="card-title">{header}</h5>

@@ -1,7 +1,5 @@
-import "./App.css";
-
 import Cards from "./components/Cards";
-import Navbar from "./components/Navbar";
+//import Navbar from "./components/Navbar";
 import BootstrapCards from "./components/BootstrapCards";
 
 import wordRecords from "./text-files/workRecords.json";
@@ -30,8 +28,8 @@ function App() {
 
   return (
     <>
-      <div style={header}>
-        <h1>Hello, React App!</h1>
+      <div style={header} className="h-screen bg-green-400">
+          <h1>Hello, React App!</h1>
       </div>
 
       <main>
