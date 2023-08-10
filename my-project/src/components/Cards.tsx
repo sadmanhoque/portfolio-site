@@ -8,13 +8,15 @@ interface Props  {
 
 function Cards({ header, categories}: Props) {
   return (
-    <div className="bg-blue">
-      <h1>{header}</h1>
+    <div className="bg-yellow-600 m-1">
+      <h1 className="text-xl font-bold">{header}</h1>
+      <p>
       {categories.map((category) => (
         <li key={category}>
           <h4>{category}</h4>
         </li>
       ))}
+      </p>
     </div>
   );
 }

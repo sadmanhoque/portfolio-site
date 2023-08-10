@@ -26,12 +26,13 @@ function App() {
         <h1>Hello, React App</h1>
       </div>
 
-      <div className="h-96 bg-blue-300 flex items-center justify-center text-center">
+      <div className="h-96 bg-blue-800 flex items-center justify-center text-center">
         <Cards categories={wordRecords.DevOps} header="DevOps" />
         <Cards categories={wordRecords.IoT} header="IoT" />
         <Cards categories={wordRecords.BackEnd} header="BackEnd" />
       </div>
-      <div className="h-96 bg-green-900 flex items-center justify-center text-center">
+      <div className="h-96 bg-green-900 items-center justify-center text-center">
+        <div className="grid lg:grid-cols-2 gap-6">
         <BootstrapCards
           header={"Google Maps Randomizer"}
           stuff={projectRecords.GoogleMapsRandomizer[0]}
@@ -59,7 +60,7 @@ function App() {
           hyperLink={"google.com"}
           imageLink={imageLink[0]}
         />
-
+        </div>
       </div>
       <div className="h-96 bg-blue-900 flex items-center justify-center text-center">
         <Cards categories={navBarItems} header={"temp"} />
