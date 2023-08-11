@@ -1,4 +1,5 @@
 import "../App.css";
+import React from "react";
 
 interface Props {
   header: string;
@@ -7,10 +8,10 @@ interface Props {
   imageLink: string;
 }
 
-function BootstrapCards({ header, stuff, hyperLink, imageLink }: Props) {
+function ProjectCards({ header, stuff, hyperLink, imageLink }: Props) {
   return (
-    <div className="max-h-40 bg-yellow-300 flex flex-col justify-between">
-      <img src={imageLink} alt="test" />
+    <div className="bg-yellow-300 flex flex-col justify-between">
+      <img src={imageLink} alt="test" className="max-h-20"/>
       <div className="p-2">
         <h2 className="font-semibold">{header}</h2>
         <p className="card-text">{stuff}</p>
@@ -20,4 +21,4 @@ function BootstrapCards({ header, stuff, hyperLink, imageLink }: Props) {
   );
 }
 
-export default BootstrapCards;
+export default ProjectCards;

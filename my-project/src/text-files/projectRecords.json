@@ -1,6 +1,14 @@
 {
-    "GoogleMapsRandomizer": ["Google Maps based website to generate random search results for when I can’t decide where to eat."],
-    "DataAnalytics": ["Data Analytics project on housing in NS involving data scraping with Python."],
-    "Electronics": ["A robot that can write!"],
-    "Research": ["My numerous research papers on topics I found interesting, some of them have been cited a few times."]
+    "GoogleMapsRandomizer": [
+        "Google Maps based website to generate random search results for when I can’t decide where to eat."
+    ],
+    "DataAnalytics": [
+        "Data Analytics project on housing in NS involving data scraping with Python."
+    ],
+    "Electronics": [
+        "A robot that can write!"
+    ],
+    "Research": [
+        "My numerous research papers on topics I found interesting, some of them have been cited a number of times."
+    ]
 }
