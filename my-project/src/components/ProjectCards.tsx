@@ -13,8 +13,8 @@ function ProjectCards({ header, stuff, hyperLink, imageLink }: Props) {
     <div className="bg-yellow-300 flex flex-col justify-between">
       <img src={imageLink} alt="test" className="max-h-20"/>
       <div className="p-2">
-        <h2 className="font-semibold">{header}</h2>
-        <p className="card-text">{stuff}</p>
+        <h2 className="text-xl font-bold">{header}</h2>
+        <p>{stuff}</p>
         </div>
 
     </div>
