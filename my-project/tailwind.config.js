@@ -6,7 +6,11 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridAutoRows: {
+        '2fr': 'minmax(32px, 2fr)',
+      }
+    },
   },
   plugins: [],
 }

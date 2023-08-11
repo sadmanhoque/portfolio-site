@@ -14,13 +14,15 @@
         "Cloudformation",
         "CI/CD",
         "Jenkins",
-        "Chef"
+        "Chef",
+        "DynamoDB",
+        "RDS"
     ],
     "IoTBadges": [
+        "APIs",
         "LoRaWAN",
         "Cellular",
-        "WiFi",
-        "API"
+        "WiFi"
     ],
     "BackEndBadges": [
         "Python",

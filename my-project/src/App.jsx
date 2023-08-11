@@ -3,6 +3,7 @@ import "./App.css"
 import WorkCards from "./components/WorkCards";
 //import Navbar from "./components/Navbar";
 import ProjectCards from "./components/ProjectCards";
+import ContactCards from "./components/ContactCard"
 
 import workRecords from "./text-files/workRecords.json";
 import projectRecords from "./text-files/projectRecords.json";
@@ -59,9 +60,9 @@ function App() {
         </div>
       </div>
       <div className="h-96 bg-blue-900 flex items-center justify-center text-center">
-        <WorkCards categories={navBarItems} header={"temp"} />
-        <WorkCards categories={navBarItems} header={"temp"} />
-        <WorkCards categories={navBarItems} header={"temp"} />
+        <ContactCards categories={navBarItems} header={"temp"} />
+        <ContactCards categories={navBarItems} header={"temp"} />
+        <ContactCards categories={navBarItems} header={"temp"} />
       </div>
 
     </>
