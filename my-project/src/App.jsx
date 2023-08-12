@@ -26,6 +26,8 @@ function App() {
   const projectLink = [
     "https://github.com/sadmanhoque/restaurant-randomizer",
     "https://github.com/sadmanhoque/Selenium-NShousing",
+    "https://www.youtube.com/watch?v=lLXjolcJ_E8",
+    "https://www.researchgate.net/profile/Sadman-Sadi"
   ]
 
   return (
@@ -58,14 +60,14 @@ function App() {
           <ProjectCards
             stuff={projectRecords.Electronics[0]}
             header={"Electronics"}
-            hyperLink={"google.com"}
+            hyperLink={projectLink[2]}
             imageLink={imageLink[2]}
           />
 
           <ProjectCards
             stuff={projectRecords.Research[0]}
             header={"Research"}
-            hyperLink={"google.com"}
+            hyperLink={projectLink[3]}
             imageLink={imageLink[3]}
           />
         </div>

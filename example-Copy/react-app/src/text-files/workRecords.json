@@ -1,5 +1,0 @@
-{
-    "DevOps": ["Site reliability engineer for monolithic AWS stacks with a 100 websites.", "Upgrading existing cloud architecture to be more cost effective."],
-    "BackEnd": ["Data transformation using AWS Lambda to decode sensor data.", "Created backend system for natural language processing using AWS."],
-    "IoT": ["Designing cloud architecture for IoT devices spanning several wireless protocols.", "Researching sensor capabilities and certifications for site and network compatilibility"] 
-}
