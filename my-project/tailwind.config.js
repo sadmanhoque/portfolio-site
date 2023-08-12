@@ -7,8 +7,12 @@ export default {
   ],
   theme: {
     extend: {
-      gridAutoRows: {
-        '2fr': 'minmax(32px, 2fr)',
+      colors: {
+        darkestBlue: '#011f2e',
+        medBlue: '#219EBC',
+        lightestBlue: '#8ECAE6',
+        highlightYellow: '#FFB703'
+
       }
     },
   },
