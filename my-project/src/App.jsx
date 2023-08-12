@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="h-[70vh] p-10 bg-darkestBlue flex items-center justify-center text-center text-highlightYellow text-5xl">
+      <div className="h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2020/07/27/14/34/forest-5442598_1280.jpg')] flex items-center justify-center text-center text-highlightYellow text-5xl">
         <h1>Do I write my name here or something</h1>
       </div>
       <div className="h-[70vh] p-10 bg-darkestBlue flex flex-col items-center justify-center text-justify">
