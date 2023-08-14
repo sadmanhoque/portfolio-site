@@ -10,14 +10,14 @@ import projectRecords from "./text-files/projectRecords.json";
 function App() {
   //const navBarItems = ["Work", "Projects", "Contacts"];
   const imageLink = [
-    "./src/assets/Google_Maps.svg",
-    "https://www.flaticon.com/free-icons/analysis",
-    "./src/assets/robotics.svg",
-    "./src/assets/research.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/Google_Maps.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/data-analytics.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/robotics.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/research.svg",
   ];
   const contactsImageLink = [
-    "./src/assets/github-mark.svg",
-    "./src/assets/linkedin.svg"
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/github-mark.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/linkedin.svg"
   ]
   const contactsLink = [
     "https://github.com/sadmanhoque/",
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="h-[70vh] p-10 bg-[url('https://i.redd.it/301e1ns2lfz61.png')] flex items-center justify-center text-center text-highlightYellow text-5xl">
+      <div className="h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg')] flex items-center justify-center text-center text-highlightYellow text-5xl">
         <h1>Hello, my name is Sadman Sadi</h1>
       </div>
       <div className="h-[70vh] p-10 bg-darkestBlue flex flex-col items-center justify-center text-justify">
