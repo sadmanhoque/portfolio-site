@@ -9,9 +9,9 @@ interface Props  {
 
 function WorkCards({ header, description, badges}: Props) {
   return (
-    <div className="text-white p-4 max-w-xl flex flex-col justify-between hover:rounded-3xl group-hover:opacity-40 hover:!opacity-100">
+    <div className="text-white p-4 max-w-xl flex flex-col justify-between hover:rounded-3xl group-hover:opacity-40 hover:!opacity-100 group">
       <div>
-      <h1 className="text-lg font-bold hover:text-highlightYellow">{header}</h1>
+      <h1 className="text-lg font-bold group-hover:text-white group-hover:!text-highlightYellow">{header}</h1>
         <h4>{description[0]}</h4>
       <div className="flex flex-wrap max-w-32">
         {badges.map((badge) => (
