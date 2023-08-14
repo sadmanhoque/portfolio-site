@@ -11,7 +11,7 @@ function App() {
   //const navBarItems = ["Work", "Projects", "Contacts"];
   const imageLink = [
     "./src/assets/Google_Maps.svg",
-    "./src/assets/data-analytics.svg",
+    "https://www.flaticon.com/free-icons/analysis",
     "./src/assets/robotics.svg",
     "./src/assets/research.svg",
   ];
@@ -32,8 +32,8 @@ function App() {
 
   return (
     <>
-      <div className="h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2020/07/27/14/34/forest-5442598_1280.jpg')] flex items-center justify-center text-center text-highlightYellow text-5xl">
-        <h1>Do I write my name here or something</h1>
+      <div className="h-[70vh] p-10 bg-[url('https://i.redd.it/301e1ns2lfz61.png')] flex items-center justify-center text-center text-highlightYellow text-5xl">
+        <h1>Hello, my name is Sadman Sadi</h1>
       </div>
       <div className="h-[70vh] p-10 bg-darkestBlue flex flex-col items-center justify-center text-justify">
         <div className="grid lg:grid-cols-3 gap-6 group">
