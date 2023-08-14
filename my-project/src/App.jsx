@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg')] flex items-center justify-center text-center text-highlightYellow text-5xl">
+      <div className="relative h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg')] flex items-center justify-center text-center text-highlightYellow text-5xl bg-no-repeat bg-cover">
         <h1>Hello, my name is Sadman Sadi</h1>
       </div>
       <div className="h-[70vh] p-10 bg-darkestBlue flex flex-col items-center justify-center text-justify">
