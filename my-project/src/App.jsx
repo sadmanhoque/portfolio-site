@@ -74,8 +74,8 @@ function App() {
       </div>
       <div className="h-[40vh] p-10 bg-darkestBlue flex flex-col items-center justify-center text-justify">
         <div className="grid lg:grid-cols-2 gap-6">
-          <ContactCards contactImage={contactsImageLink[0]} contactsLink={contactsLink[0]} />
-          <ContactCards contactImage={contactsImageLink[1]} contactsLink={contactsLink[1]} />
+          <ContactCards contactImage={contactsImageLink[0]} contactsLink={contactsLink[0]} altName={"Github"} />
+          <ContactCards contactImage={contactsImageLink[1]} contactsLink={contactsLink[1]} altName={"LinkedIn"} />
         </div>
       </div>
 

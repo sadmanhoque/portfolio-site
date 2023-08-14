@@ -6,12 +6,13 @@ interface Props {
   stuff: string;
   hyperLink: string;
   imageLink: string;
+  altName: string;
 }
 
-function ProjectCards({ header, stuff, hyperLink, imageLink }: Props) {
+function ProjectCards({ header, stuff, hyperLink, imageLink, altName }: Props) {
   return (
     <div className="p-20 text-white flex flex-col justify-between group-hover:opacity-40 hover:!opacity-100">
-      <img src={imageLink} alt="test" className="max-h-20"/>
+      <img src={imageLink} alt={altName} className="max-h-20"/>
       <div className="p-2">
         <h2 className="text-xl font-bold">{header}</h2>
         <p>{stuff}</p>
