@@ -13,9 +13,9 @@ function WorkCards({ header, description, badges}: Props) {
       <div>
       <h1 className="text-xl font-bold group-hover:text-highlightYellow">{header}</h1>
         <h4>{description[0]}</h4>
-      <div className="flex flex-wrap max-w-32">
+      <div className="flex flex-wrap max-w-32 my-5">
         {badges.map((badge) => (
-          <div key={badge} className="m-0.5 w-fit bg-medBlue text-darkestBlue font-semibold rounded-full p-1 text-sm">
+          <div key={badge} className="m-1 w-fit bg-medBlue text-darkestBlue font-semibold rounded-full p-1 text-sm">
             <span>
               {badge}
             </span>
