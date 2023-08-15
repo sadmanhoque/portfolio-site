@@ -18,7 +18,7 @@ function App() {
   const contactsImageLink = [
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/github-mark.svg",
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/linkedin.svg",
-    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/resume.svg"
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/73fad54561f0354436e83d04d950f87b1e26a1ce/my-project/src/assets/resume.svg"
   ]
   const contactsLink = [
     "https://github.com/sadmanhoque/",
