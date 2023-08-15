@@ -17,9 +17,7 @@ function ProjectCards({ header, stuff, hyperLink, imageLink, altName }: Props) {
         <h2 className="text-xl font-bold group-hover:text-highlightYellow">{header}</h2>
         <p>{stuff}</p>
         <a className="group-hover:text-highlightYellow group-hover:animate-pulse" href={hyperLink} target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-          </svg>
+          check it out &rarr;
         </a>
       </div>
 
