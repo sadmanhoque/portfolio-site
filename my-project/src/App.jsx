@@ -16,9 +16,9 @@ function App() {
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/research.svg",
   ];
   const contactsImageLink = [
-    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/github-mark.svg",
-    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/linkedin.svg",
-    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/73fad54561f0354436e83d04d950f87b1e26a1ce/my-project/src/assets/resume.svg"
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/c1621b4ebd6a50aa5d46b2ef0c8a52becaeb2890/my-project/src/assets/github-mark.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/c1621b4ebd6a50aa5d46b2ef0c8a52becaeb2890/my-project/src/assets/linkedin.svg",
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fbusiness-world-extras%2F512%2FBusinessmen_Resume-512.png&f=1&nofb=1&ipt=4b653ada24f6cd2f4339a3452f2e902b1a26fd66ea1d8679f5160884b2935c03&ipo=images"
   ]
   const contactsLink = [
     "https://github.com/sadmanhoque/",
