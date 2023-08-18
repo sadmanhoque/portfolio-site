@@ -18,7 +18,7 @@ function App() {
   const contactsImageLink = [
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/c1621b4ebd6a50aa5d46b2ef0c8a52becaeb2890/my-project/src/assets/github-mark.svg",
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/c1621b4ebd6a50aa5d46b2ef0c8a52becaeb2890/my-project/src/assets/linkedin.svg",
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fbusiness-world-extras%2F512%2FBusinessmen_Resume-512.png&f=1&nofb=1&ipt=4b653ada24f6cd2f4339a3452f2e902b1a26fd66ea1d8679f5160884b2935c03&ipo=images"
+    "https://cdn-icons-png.flaticon.com/512/6588/6588143.png",
   ]
   const contactsLink = [
     "https://github.com/sadmanhoque/",
