@@ -1,4 +1,7 @@
 {
+    "Terraform": [
+        "Terraform script and github actions based CICD pipeline to deploy any dockerized application to AWS' ECS service."
+    ],
     "GoogleMapsRandomizer": [
         "Google Maps based website to generate random search results for when I can’t decide where to eat."
     ],

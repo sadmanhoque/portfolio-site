@@ -14,6 +14,7 @@ function App() {
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/data-analytics.svg",
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/robotics.svg",
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/a757d54363d0cc3b6905fbfaf0fe0c9231ce5faf/my-project/src/assets/research.svg",
+    "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/edfa6bcd98b2949c0b5c674b67c368cd38975875/my-project/src/assets/terraform.svg"
   ];
   const contactsImageLink = [
     "https://raw.githubusercontent.com/sadmanhoque/portfolio-site/c1621b4ebd6a50aa5d46b2ef0c8a52becaeb2890/my-project/src/assets/github-mark.svg",
@@ -29,7 +30,8 @@ function App() {
     "https://github.com/sadmanhoque/restaurant-randomizer",
     "https://github.com/sadmanhoque/Selenium-NShousing",
     "https://www.youtube.com/watch?v=lLXjolcJ_E8",
-    "https://www.researchgate.net/profile/Sadman-Sadi"
+    "https://www.researchgate.net/profile/Sadman-Sadi",
+    "https://github.com/sadmanhoque/ECS-project"
   ]
 
   return (
@@ -48,6 +50,12 @@ function App() {
 
       <div className="h-max p-[10vh] bg-darkestBlue items-center justify-center overflow-visible">
         <div className="grid lg:grid-cols-2 gap-6 group">
+          <ProjectCards
+            header={"Terraform"}
+            stuff={projectRecords.Terraform[0]}
+            hyperLink={projectLink[4]}
+            imageLink={imageLink[4]}
+          />
           <ProjectCards
             header={"Google Maps Randomizer"}
             stuff={projectRecords.GoogleMapsRandomizer[0]}
