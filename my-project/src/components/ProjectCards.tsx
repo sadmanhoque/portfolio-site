@@ -16,7 +16,7 @@ function ProjectCards({ header, stuff, hyperLink, imageLink, altName }: Props) {
       <div className="p-2">
         <h2 className="text-xl font-bold group-hover:text-highlightYellow">{header}</h2>
         <p>{stuff}</p>
-        <a className="group-hover:text-highlightYellow group-hover:animate-pulse" href={hyperLink} target="_blank" rel="noopener noreferrer">
+        <a className="text-highlightYellow group-hover:animate-pulse" href={hyperLink} target="_blank" rel="noopener noreferrer">
           check it out &rarr;
         </a>
       </div>
