@@ -34,17 +34,19 @@ function App() {
 
   return (
     <>
-      <div className=" h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg')] flex items-center justify-center text-center text-highlightYellow text-5xl bg-no-repeat bg-cover">
+      <div className=" h-[70vh] p-10 bg-[url('https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg')] items-center flex justify-center text-center text-highlightYellow text-5xl bg-no-repeat bg-cover">
         <h1 className="text-7xl ">Hello, my name is Sadman Sadi</h1>
       </div>
-      <div className=" h-[90vh] p-10 bg-darkestBlue flex flex-col items-center justify-center">
+
+      <div className="h-max p-10 bg-darkestBlue items-center justify-center overflow-visible">
         <div className="grid lg:grid-cols-3 gap-6 group ">
           <WorkCards description={workRecords.DevOps} badges={workRecords.DevOpsBadges} header="DevOps" />
           <WorkCards description={workRecords.IoT} badges={workRecords.IoTBadges} header="IoT" />
           <WorkCards description={workRecords.BackEnd} badges={workRecords.BackEndBadges} header="BackEnd" />
         </div>
       </div>
-      <div className="h=[30vh] p-[10vh] bg-darkestBlue flex flex-col items-center justify-center">
+
+      <div className="h-max p-[10vh] bg-darkestBlue items-center justify-center overflow-visible">
         <div className="grid lg:grid-cols-2 gap-6 group">
           <ProjectCards
             header={"Google Maps Randomizer"}
@@ -74,7 +76,8 @@ function App() {
           />
         </div>
       </div>
-      <div className="h-[40vh] p-10 bg-darkestBlue flex flex-col items-center justify-left">
+
+      <div className="h-max p-10 bg-darkestBlue flex flex-col items-center justify-left">
         <div className="grid lg:grid-cols-3 gap-6">
           <ContactCards contactImage={contactsImageLink[0]} contactsLink={contactsLink[0]} altName={"Github"} />
           <ContactCards contactImage={contactsImageLink[1]} contactsLink={contactsLink[1]} altName={"LinkedIn"} />
