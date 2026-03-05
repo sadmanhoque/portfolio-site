@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project One — Your Name</title>
+  <title>Flipp</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Karla:wght@300;400&display=swap" rel="stylesheet">
   <style>
@@ -28,9 +28,7 @@
       animation: fadeIn 0.6s ease forwards;
     }
 
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
+    @keyframes fadeIn { to { opacity: 1; } }
 
     /* ── Nav ── */
     nav {
@@ -57,15 +55,9 @@
       text-transform: uppercase;
       transition: color 0.2s, gap 0.2s;
     }
-
     .nav-back:hover { color: var(--accent); gap: 0.8rem; }
-
-    .nav-back .arrow {
-      font-size: 1rem;
-      transition: transform 0.2s;
-    }
-
     .nav-back:hover .arrow { transform: translateX(-3px); }
+    .arrow { font-size: 1rem; transition: transform 0.2s; }
 
     .nav-name {
       font-family: 'Cormorant Garamond', serif;
@@ -74,70 +66,19 @@
       letter-spacing: 0.06em;
     }
 
-    /* ── Hero ── */
-    .project-hero {
-      margin-top: 60px; /* nav height */
-      width: 100%;
-      height: 30vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .project-hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      filter: brightness(0.85);
-      animation: slowZoom 12s ease forwards;
-    }
-
-    @keyframes slowZoom {
-      from { transform: scale(1.04); }
-      to   { transform: scale(1); }
-    }
-
-    .hero-label {
-      position: absolute;
-      bottom: 2.5rem;
-      left: 2.5rem;
-      color: #f5f2ed;
-      pointer-events: none;
-    }
-
-    .hero-label .tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-label h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      font-weight: 300;
-      line-height: 1.05;
-      letter-spacing: 0.02em;
-    }
-
-    /* ── Content ── */
-    .content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 5rem 2rem 8rem;
-    }
-
-    /* ── Meta strip ── */
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2.5rem;
-      padding-bottom: 3rem;
+    /* ── Header band ── */
+    .page-header {
+      margin-top: 60px;
+      padding: 5rem 2.5rem 4rem;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 4rem;
-      animation: slideUp 0.7s 0.2s ease both;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 2rem;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: slideUp 0.6s 0.1s ease both;
     }
 
     @keyframes slideUp {
@@ -145,170 +86,322 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .meta-item label {
-      display: block;
-      font-size: 0.7rem;
+    @media (max-width: 600px) {
+      .page-header { grid-template-columns: 1fr; }
+    }
+
+    .header-left .eyebrow {
+      font-size: 0.72rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.75rem;
     }
 
-    .meta-item span {
+    .header-left h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
     }
 
-    .meta-item .tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
+    .header-left .role {
+      margin-top: 0.6rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--muted);
     }
 
-    .meta-item .tag-pill {
-      font-family: 'Karla', sans-serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+    .header-right {
+      text-align: right;
+    }
+
+    .company-logo {
+      width: 72px;
+      height: 72px;
       border: 1px solid var(--border);
-      padding: 0.2rem 0.65rem;
-      color: var(--muted);
-    }
-
-    /* ── Body copy ── */
-    .project-body {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      margin-bottom: 5rem;
-      animation: slideUp 0.7s 0.35s ease both;
-    }
-
-    @media (max-width: 640px) {
-      .project-body { grid-template-columns: 1fr; gap: 2.5rem; }
-    }
-
-    .project-body h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 1rem;
-      letter-spacing: 0.03em;
-    }
-
-    .project-body p {
-      font-size: 0.9rem;
-      line-height: 1.85;
-      color: var(--muted);
-    }
-
-    .project-body p + p { margin-top: 1rem; }
-
-    /* ── Image grid ── */
-    .image-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: auto auto;
-      gap: 1rem;
-      margin-bottom: 5rem;
-      animation: slideUp 0.7s 0.45s ease both;
-    }
-
-    @media (max-width: 580px) {
-      .image-grid { grid-template-columns: 1fr; }
-    }
-
-    .image-grid figure {
-      overflow: hidden;
-      background: #e8e3dc;
-    }
-
-    .image-grid figure:first-child {
-      grid-row: span 2;
-    }
-
-    .image-grid figure img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      min-height: 200px;
-      transition: transform 0.6s ease, filter 0.4s ease;
-      filter: brightness(0.95);
-    }
-
-    .image-grid figure:hover img {
-      transform: scale(1.03);
-      filter: brightness(1);
-    }
-
-    /* Placeholder colour blocks if no images */
-    .img-placeholder {
-      width: 100%;
-      min-height: 260px;
+      background: #faf8f5;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.75rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #a09890;
-      background: #e0dbd3;
-    }
-
-    .image-grid figure:nth-child(2) .img-placeholder { min-height: 180px; background: #d9d3ca; }
-    .image-grid figure:nth-child(3) .img-placeholder { min-height: 180px; background: #e5e0d8; }
-
-    /* ── Process ── */
-    .process {
-      margin-bottom: 5rem;
-      animation: slideUp 0.7s 0.5s ease both;
-    }
-
-    .process h2 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 2rem;
-      letter-spacing: 0.03em;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-left: auto;
     }
 
-    .steps {
+    /* ── Layout ── */
+    .layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2.5rem 8rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 0;
-      border: 1px solid var(--border);
+      grid-template-columns: 220px 1fr;
+      gap: 5rem;
+      align-items: start;
     }
 
-    .step {
-      padding: 1.8rem 1.6rem;
-      border-right: 1px solid var(--border);
+    @media (max-width: 720px) {
+      .layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      position: sticky;
+      top: 90px;
+      animation: slideUp 0.6s 0.2s ease both;
+    }
+
+    .sidebar-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .sidebar-block label {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.55rem;
+    }
+
+    .sidebar-block p, .sidebar-block a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .sidebar-block a:hover { color: var(--accent); }
+
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .skill-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .skill-row:last-child { border-bottom: none; }
+
+    .skill-bar-wrap {
+      width: 80px;
+      height: 2px;
+      background: var(--border);
+    }
+
+    .skill-bar {
+      height: 100%;
+      background: var(--accent);
+    }
+
+    /* ── Main column ── */
+    .main {
+      animation: slideUp 0.6s 0.3s ease both;
+    }
+
+    /* ── Summary ── */
+    .summary {
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3.5rem;
+    }
+
+    .summary p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 620px;
+    }
+
+    /* ── Section title ── */
+    .section-title {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.8rem;
+    }
+
+    /* ── Contributions ── */
+    .contributions {
+      margin-bottom: 3.5rem;
+    }
+
+    .contribution-item {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 1rem;
+      padding: 1.4rem 0;
       border-bottom: 1px solid var(--border);
       transition: background 0.2s;
     }
 
-    .step:hover { background: #faf8f5; }
+    .contribution-item:first-of-type { border-top: 1px solid var(--border); }
 
-    .step .num {
+    .contribution-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem;
-      font-weight: 300;
+      font-size: 0.85rem;
       color: var(--accent);
-      line-height: 1;
-      margin-bottom: 0.75rem;
+      padding-top: 2px;
     }
 
-    .step h3 {
+    .contribution-body h3 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .contribution-body p {
+      font-size: 0.87rem;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .contribution-body .impact {
+      display: inline-block;
+      margin-top: 0.65rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-left: 2px solid var(--accent);
+      padding-left: 0.6rem;
+    }
+
+    /* ── Highlights / stats ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border);
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 500px) {
+      .stats { grid-template-columns: 1fr; }
+    }
+
+    .stat {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+
+    .stat:last-child { border-right: none; }
+    .stat:hover { background: #faf8f5; }
+
+    .stat .value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--ink);
       margin-bottom: 0.4rem;
     }
 
-    .step p {
-      font-size: 0.82rem;
-      line-height: 1.7;
+    .stat .value sup {
+      font-size: 1.1rem;
+      vertical-align: super;
+      color: var(--accent);
+    }
+
+    .stat .stat-label {
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--muted);
+    }
+
+    /* ── Timeline of promotions / milestones ── */
+    .timeline {
+      margin-bottom: 3.5rem;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 1.5rem;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .timeline-item:first-of-type { border-top: 1px solid var(--border); }
+
+    .timeline-date {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-top: 3px;
+    }
+
+    .timeline-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-content p {
+      font-size: 0.85rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .milestone-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--paper);
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Testimonial ── */
+    .testimonial {
+      background: #faf8f5;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 2rem 2rem 1.8rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .testimonial blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .testimonial cite {
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-style: normal;
     }
 
     /* ── CTA ── */
@@ -317,7 +410,6 @@
       align-items: center;
       gap: 1.5rem;
       flex-wrap: wrap;
-      animation: slideUp 0.7s 0.55s ease both;
     }
 
     .btn {
@@ -363,132 +455,139 @@
       text-transform: uppercase;
     }
 
-    footer a {
-      color: var(--ink);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
+    footer a { color: var(--ink); text-decoration: none; transition: color 0.2s; }
     footer a:hover { color: var(--accent); }
-
     .footer-links { display: flex; gap: 1.5rem; }
   </style>
 </head>
 <body>
 
-  <!-- Nav -->
   <nav>
     <a class="nav-back" href="index.html">
       <span class="arrow">←</span> Back to Portfolio
     </a>
-    <span class="nav-name">Your Name</span>
+    <span class="nav-name">Sadman</span>
   </nav>
 
-  <!-- Hero -->
-  <div class="project-hero">
-    <img src="project-hero.jpg" alt="Project One hero" />
-    <div class="hero-label">
-      <p class="tag">Case Study</p>
-      <h1>Project One</h1>
+  <!-- Page header -->
+  <div class="page-header">
+    <div class="header-left">
+      <p class="eyebrow">Work Experience</p>
+      <h1>Flipp</h1>
+      <p class="role">System Reliability Engineer</p>
     </div>
   </div>
-  
 
-  <!-- Main content -->
-  <div class="content">
-    <!-- Meta -->
-    <div class="meta">
-      <div class="meta-item">
-        <label>Year</label>
-        <span>2024</span>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <div class="sidebar-block">
+        <label>Duration</label>
+        <p>Dec 2023 – Dec 2025</p>
       </div>
-      <div class="meta-item">
-        <label>Role</label>
-        <span>Design & Development</span>
+
+      <div class="sidebar-block">
+        <label>Location</label>
+        <p>Toronto, ON<br>Remote</p>
       </div>
-      <div class="meta-item">
-        <label>Client</label>
-        <span>Personal Project</span>
+
+      <div class="sidebar-block">
+        <label>Team Size</label>
+        <p>8 engineers</p>
       </div>
-      <div class="meta-item">
-        <label>Stack</label>
-        <div class="tags">
-          <span class="tag-pill">Bun</span>
-          <span class="tag-pill">TypeScript</span>
-          <span class="tag-pill">Hono</span>
-          <span class="tag-pill">CSS</span>
+
+      <div class="sidebar-block">
+        <label>Website</label>
+        <a target="_blank" href="https://corp.flipp.com">corp.flipp.com ↗</a>
+      </div>
+
+      <div class="sidebar-block">
+        <label>Core Skills</label>
+        <div class="skill-list">
+          <div class="skill-row">
+            Terraform
+            <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
+          </div>
+          <div class="skill-row">
+            AWS
+            <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+          </div>
+          <div class="skill-row">
+            Kubernetes
+            <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div>
+          </div>
+          <div class="skill-row">
+            Datadog
+            <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+          </div>
+          <div class="skill-row">
+            Bash scripting
+            <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Overview + Challenge -->
-    <div class="project-body">
-      <div>
-        <h2>Overview</h2>
-        <p>A brief but compelling description of the project. What does it do? Who is it for? What problem does it solve in the world?</p>
-        <p>This paragraph gives more context — the backstory, the motivation, or the opportunity that sparked the work. Keep it honest and specific.</p>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Summary quote -->
+      <div class="summary">
+        <p>"Led the rebuild of the customer-facing dashboard from the ground up, driving a measurable improvement in performance and a significant reduction in support tickets over 18 months."</p>
       </div>
-      <div>
-        <h2>The Challenge</h2>
-        <p>Describe what made this project hard or interesting. What constraints did you work within? What trade-offs did you navigate?</p>
-        <p>The best portfolios don't just show outcomes — they show thinking. Use this space to demonstrate how you reason through problems.</p>
-      </div>
-    </div>
 
-    <!-- Image grid -->
-    <div class="image-grid">
-      <figure>
-        <div class="img-placeholder">Image 01</div>
-      </figure>
-      <figure>
-        <div class="img-placeholder">Image 02</div>
-      </figure>
-      <figure>
-        <div class="img-placeholder">Image 03</div>
-      </figure>
-    </div>
+      <!-- Contributions -->
+      <p class="section-title">Key Contributions</p>
+      <div class="contributions">
 
-    <!-- Process -->
-    <div class="process">
-      <h2>Process</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="num">01</div>
-          <h3>Research</h3>
-          <p>Understanding the problem space, users, and constraints before writing a single line of code.</p>
+        <div class="contribution-item">
+          <span class="contribution-num">01</span>
+          <div class="contribution-body">
+            <h3>FinOps</h3>
+            <p>Drove initiatives to optimize server compute allocations and aided in platform migration.</p>
+            <span class="impact">tens of thousands in monthly bill reduction.</span>
+          </div>
         </div>
-        <div class="step">
-          <div class="num">02</div>
-          <h3>Design</h3>
-          <p>Sketching, wireframing, and prototyping to explore the solution space quickly.</p>
+
+        <div class="contribution-item">
+          <span class="contribution-num">02</span>
+          <div class="contribution-body">
+            <h3>Terraform Ownership</h3>
+            <p>Maintained all existing and created new custom terraform modules for AWS, enabling devs to quickly build and modify systems.</p>
+            <span class="impact">Faster prototyping across all teams</span>
+          </div>
         </div>
-        <div class="step">
-          <div class="num">03</div>
-          <h3>Build</h3>
-          <p>Translating designs into production-quality code with attention to performance and detail.</p>
+
+        <div class="contribution-item">
+          <span class="contribution-num">03</span>
+          <div class="contribution-body">
+            <h3>On-call Support</h3>
+            <p>Provided on-call support on a rotational basis, fixing production critical parts of the system any time of the day during the allocated week.</p>
+            <span class="impact">Improved uptime for website/app</span>
+          </div>
         </div>
-        <div class="step">
-          <div class="num">04</div>
-          <h3>Ship & Iterate</h3>
-          <p>Launching, gathering feedback, and refining based on real-world use.</p>
+
+        <div class="contribution-item">
+          <span class="contribution-num">04</span>
+          <div class="contribution-body">
+            <h3>Updating legacy systems</h3>
+            <p>Re-designed and updated legacy systems to improve reliability of systems and reduce workload over old processes constantly breaking and causing (potential) downtime.</p>
+            <span class="impact">More system reliability</span>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="cta">
-      <a class="btn btn-primary" href="#">View Live Site</a>
-      <a class="btn btn-secondary" href="#">GitHub Repo</a>
-    </div>
-
+    </main>
   </div>
 
-  <footer>
+<footer>
     <a href="index.html">← Portfolio</a>
     <div class="footer-links">
-      <a href="mailto:you@example.com">Email</a>
-      <a href="https://github.com/you">GitHub</a>
-      <a href="https://linkedin.com/in/you">LinkedIn</a>
+      <a href="mailto:sadmanhoque@yahoo.com">Email</a>
+      <a target="_blank" href="https://github.com/sadmanhoque">GitHub</a>
+      <a target="_blank" href="https://linkedin.com/in/sadmanh">LinkedIn</a>
     </div>
   </footer>
 
