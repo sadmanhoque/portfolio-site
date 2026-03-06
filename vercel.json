@@ -1,3 +1,5 @@
 {
-    "outputDirectory": "src2"
+  "version": 2,
+  "builds": [{ "src": "src2/**", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "/src2/$1" }]
 }
