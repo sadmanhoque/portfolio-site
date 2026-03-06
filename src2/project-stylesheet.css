@@ -302,7 +302,7 @@ nav {
 
 .btn-primary {
     background: var(--button-background);
-    color: var(--paper);
+    color: var(--ink);
 }
 
 .btn-primary:hover {
