@@ -1,11 +1,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --ink: #1a1714;
-    --paper: #f5f2ed;
-    --accent: #c9a96e;
-    --muted: #5a5550;
-    --border: #d8d2c8;
+    --ink: #ffffff;         /*title and header text colour*/
+    --paper: #000000;       /*page background*/
+    --accent: #00FF41;      /*not sure tbh*/
+    --muted: #a2e8b3;
+    --border: #008F11;  
 }
 
 html { scroll-behavior: smooth; }
@@ -30,9 +30,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.4rem 2.5rem;
-    background: rgba(245, 242, 237, 0.88);
+    background: #012001;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(216, 210, 200, 0.6);
+    border-bottom: 1px solid #012001;
 }
 
 .nav-back {
@@ -113,7 +113,7 @@ nav {
     width: 72px;
     height: 72px;
     border: 1px solid var(--border);
-    background: #faf8f5;
+    background: #00FF41;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,7 +296,7 @@ nav {
 }
 
 .stat:last-child { border-right: none; }
-.stat:hover { background: #faf8f5; }
+.stat:hover { background: #00FF41; }
 
 .stat .value {
     font-family: 'Cormorant Garamond', serif;
@@ -370,7 +370,7 @@ nav {
 
 /* ── Testimonial ── */
 .testimonial {
-    background: #faf8f5;
+    background: #00FF41;
     border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     padding: 2rem 2rem 1.8rem;

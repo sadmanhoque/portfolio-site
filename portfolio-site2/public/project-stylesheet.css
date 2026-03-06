@@ -1,11 +1,12 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --ink: #1a1714;
-    --paper: #f5f2ed;
-    --accent: #c9a96e;
-    --muted: #5a5550;
-    --border: #d8d2c8;
+    --ink: #ffffff;         /*title and header text colour*/
+    --paper: #000000;       /*page background*/
+    --accent: #00FF41;      /*not sure tbh*/
+    --muted: #a2e8b3;
+    --border: #008F11; 
+    --button-background: #012001;
 }
 
 html { scroll-behavior: smooth; }
@@ -32,9 +33,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.4rem 2.5rem;
-    background: rgba(245, 242, 237, 0.88);
+    background: #012001;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(216, 210, 200, 0.6);
+    border-bottom: 1px solid #012001;
 }
 
 .nav-back {
@@ -93,7 +94,7 @@ nav {
     position: absolute;
     bottom: 2.5rem;
     left: 2.5rem;
-    color: #f5f2ed;
+    color: #ffffff;
     pointer-events: none;
 }
 
@@ -209,11 +210,6 @@ nav {
     .image-grid { grid-template-columns: 1fr; }
 }
 
-.image-grid figure {
-    overflow: hidden;
-    background: #e8e3dc;
-}
-
 .image-grid figure:first-child {
     grid-row: span 2;
 }
@@ -232,23 +228,6 @@ nav {
     transform: scale(1.03);
     filter: brightness(1);
 }
-
-/* Placeholder colour blocks if no images */
-.img-placeholder {
-    width: 100%;
-    min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #a09890;
-    background: #e0dbd3;
-}
-
-.image-grid figure:nth-child(2) .img-placeholder { min-height: 180px; background: #d9d3ca; }
-.image-grid figure:nth-child(3) .img-placeholder { min-height: 180px; background: #e5e0d8; }
 
 /* ── Process ── */
 .process {
@@ -278,7 +257,7 @@ nav {
     transition: background 0.2s;
 }
 
-.step:hover { background: #faf8f5; }
+.step:hover { background: #012001; }
 
 .step .num {
     font-family: 'Cormorant Garamond', serif;
@@ -322,7 +301,7 @@ nav {
 }
 
 .btn-primary {
-    background: var(--ink);
+    background: var(--button-background);
     color: var(--paper);
 }
 

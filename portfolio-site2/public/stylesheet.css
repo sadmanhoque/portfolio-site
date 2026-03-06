@@ -1,9 +1,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --ink: #1a1714;
-    --paper: #f5f2ed;
-    --accent: #c9a96e;
+    --ink: #ffffff;         /*title and header text colour*/
+    --paper: #000000;       /*page background*/
+    --accent: #008F11;      /*not sure tbh*/
 }
 
 body {
@@ -45,7 +45,7 @@ body {
 
 header {
     padding: 3.5rem 0 2.5rem;
-    border-bottom: 1px solid #d8d2c8;
+    border-bottom: 1px solid #008F11;   /*that line beneath header*/
     margin-bottom: 3rem;
 }
 
@@ -82,8 +82,8 @@ h2 {
 
 .card {
     padding: 1.6rem;
-    border: 1px solid #d8d2c8;
-    background: #faf8f5;
+    border: 1px solid #00FF41;     /*card border and underline colour*/
+    background: #012001;     /*card background colour*/
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -99,7 +99,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-.card p { font-size: 0.88rem; line-height: 1.65; color: #5a5550; }
+.card p { font-size: 0.88rem; line-height: 1.65; color: #a2e8b3; }  /*card text colour*/
 
 .card a {
     display: inline-block;
@@ -117,7 +117,7 @@ h2 {
 .card a:hover { color: var(--accent); }
 
 footer {
-    border-top: 1px solid #d8d2c8;
+    border-top: 1px solid #8fe67d;
     padding-top: 2rem;
     font-size: 0.8rem;
     letter-spacing: 0.1em;
