@@ -1,4 +1,4 @@
-const text = "Welcome to my portfolio site.";
+const text = "Welcome to my portfolio.";
     let index = 0;
 
     function typeNext() {
